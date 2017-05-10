@@ -45,6 +45,7 @@ This is a list of frequently asked questions about using the Messaging API and t
     - [Is the user ID (`userId`) different from the LINE ID?](#is-the-user-id-userid-different-from-the-line-id)
     - [Why do I get different user IDs (`userId`) with my different accounts (Channels)?](#why-do-i-get-different-user-ids-userid-with-my-different-accounts-channels)
     - [Do I need to have a server to create a LINE bot?](#do-i-need-to-have-a-server-to-create-a-line-bot)
+    - [Do I need to use SSL on my server?](#do-i-need-to-use-ssl-on-my-server)
     - [Can I use the LINE Bot SDK in localhost?](#can-i-use-the-line-bot-sdk-in-localhost)
     - [How can I get a user's time zone information?](#how-can-i-get-a-users-time-zone-information)
     - [Can I send messages to Timeline?](#can-i-send-messages-to-timeline)
@@ -234,6 +235,10 @@ Your accounts may belong to different *companies* (or *enterprises*) in the [LIN
 ### Do I need to have a server to create a LINE bot?
 
 Yes, you need to have a server with a SSL certificate to communicate with the LINE Platform. You can get free SSL certifcates using a service such as Let's Encrypt or StartSSL. It's also possible to try out the LINE Bot SDK using Heroku or another similar cloud service.
+
+### Do I need to use SSL on my server?
+
+Yes, you have to use SSL on your server. Also note that self-signed certificates are not acceptable. If you encounter issues related to your SSL configuration, you should check that your SSL certificate chain is complete and that your intermediate certificates are correctly installed on your server.
 
 ### Can I use the LINE Bot SDK in localhost?
 
