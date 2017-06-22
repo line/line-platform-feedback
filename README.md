@@ -38,6 +38,7 @@ This is a list of frequently asked questions about using the Messaging API and t
     - [Do audio files have to use the M4A file extension?](#do-audio-files-have-to-use-the-m4a-file-extension)
     - [How can I get the image of a sticker that a user sends to my bot?](#how-can-i-get-the-image-of-a-sticker-that-a-user-sends-to-my-bot)
     - [Why can't I save or forward videos that are sent from my bot?](#why-cant-i-save-or-forward-videos-that-are-sent-from-my-bot)
+    - [Why doesn't my audio, video, or image message display properly on Android devices?](#why-doesnt-my-audio-video-or-image-message-display-properly-on-android-devices)
 - [Other](#other)
     - [Do webhook requests have to be handled asynchronously?](#do-webhook-requests-have-to-be-handled-asynchronously)
     - [If a webhook delivery fails, will LINE retry sending the webhook?](#if-a-webhook-delivery-fails-will-line-retry-sending-the-webhook)
@@ -203,6 +204,12 @@ Unfortunately, it's not possible to get the image of stickers sent by users. You
 ### Why can't I save or forward videos that are sent from my bot?
 
 This feature is not supported on the Messaging API. Users can only play videos that are sent from a bot, they cannot download or forward the videos to other users.
+
+### Why doesn't my audio, video, or image message display properly on Android devices?
+
+The Android LINE app does not currently support Server Name Indication (SNI). As a result, audio, video, and image messages that are hosted on a server that uses SNI may not be displayed properly. Our team is planning to fix this in a future release.
+
+You can check if the server you are hosting your media on supports SNI using [SSL Labs's SSL Test](https://www.ssllabs.com/ssltest/). 
 
 ## Other
 
