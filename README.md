@@ -38,6 +38,7 @@ This is a list of frequently asked questions about using the Messaging API and t
     - [Do audio files have to use the M4A file extension?](#do-audio-files-have-to-use-the-m4a-file-extension)
     - [How can I get the image of a sticker that a user sends to my bot?](#how-can-i-get-the-image-of-a-sticker-that-a-user-sends-to-my-bot)
     - [Why can't I save or forward videos that are sent from my bot?](#why-cant-i-save-or-forward-videos-that-are-sent-from-my-bot)
+    - [How can I prevent my images and videos from being downloaded by users?](#how-can-i-prevent-my-images-and-videos-from-being-downloaded-by-users)
     - [Why doesn't my audio, video, or image message display properly on Android devices?](#why-doesnt-my-audio-video-or-image-message-display-properly-on-android-devices)
 - [Other](#other)
     - [Do webhook requests have to be handled asynchronously?](#do-webhook-requests-have-to-be-handled-asynchronously)
@@ -203,7 +204,11 @@ Unfortunately, it's not possible to get the image of stickers sent by users. You
 
 ### Why can't I save or forward videos that are sent from my bot?
 
-This feature is not supported on the Messaging API. Users can only play videos that are sent from a bot, they cannot download or forward the videos to other users.
+You cannot save or forward videos sent from a bot if you are using LINE on iOS or on a version of LINE Android below 7.6.0. Users using LINE Android version 7.6.0 and download, forward, and save videos on Keep.
+
+### How can I prevent my images and videos from being downloaded by users?
+
+If you don't want your images and videos to be downloaded by users, we recommend sending rich content messages such as imagemap messages instead of images or videos.
 
 ### Why doesn't my audio, video, or image message display properly on Android devices?
 
