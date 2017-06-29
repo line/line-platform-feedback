@@ -7,7 +7,6 @@ This is a list of frequently asked questions about using the Messaging API and t
 - [Groups and rooms](#groups-and-rooms)
     - [Why can’t I invite my bot to a group or a room?](#why-cant-i-invite-my-bot-to-a-group-or-a-room)
     - [How can I get the user IDs of the users of a group or a room?](#how-can-i-get-the-user-ids-of-the-users-of-a-group-or-a-room)
-    - [Why can't I get the user IDs of the users of a group or a room?](#why-cant-i-get-the-user-ids-of-the-users-of-a-group-or-a-room)
     - [How can I find out the number of users in a group or a room?](#how-can-i-find-out-the-number-of-users-in-a-group-or-a-room)
     - [How can I get the name and profile image of a group?](#how-can-i-get-the-name-and-profile-image-of-a-group)
     - [Can I get events for when a user joins or leaves a group?](#can-i-get-events-for-when-a-user-joins-or-leaves-a-group)
@@ -38,6 +37,7 @@ This is a list of frequently asked questions about using the Messaging API and t
     - [Do audio files have to use the M4A file extension?](#do-audio-files-have-to-use-the-m4a-file-extension)
     - [How can I get the image of a sticker that a user sends to my bot?](#how-can-i-get-the-image-of-a-sticker-that-a-user-sends-to-my-bot)
     - [Why can't I save or forward videos that are sent from my bot?](#why-cant-i-save-or-forward-videos-that-are-sent-from-my-bot)
+    - [How can I prevent my images and videos from being downloaded by users?](#how-can-i-prevent-my-images-and-videos-from-being-downloaded-by-users)
     - [Why doesn't my audio, video, or image message display properly on Android devices?](#why-doesnt-my-audio-video-or-image-message-display-properly-on-android-devices)
 - [Other](#other)
     - [Do webhook requests have to be handled asynchronously?](#do-webhook-requests-have-to-be-handled-asynchronously)
@@ -63,11 +63,7 @@ In the LINE@ Manager, go to Settings > Bot Settings > Details and make sure you 
 
 ### How can I get the user IDs of the users of a group or a room?
 
-It's not currently possible to get the user IDs of the individual members of a group or room. You can only get the user IDs of users in 1-on-1 chats.
-
-### Why can't I get the user IDs of the users of a group or a room?
-
-We currently don't provide this information because we value our users' privacy. Although your bot may have been invited to a group or a room, not all users in the group or room may have agreed to provide you with their profile information. We understand that it would be convenient if you were able to get the user IDs and we are currently working on a way to resolve this issue.
+User IDs are returned in webhook event objects when a user sends a message as long as the user is using LINE version 7.5.0 or higher and has agreed to the [Official Accounts Terms of Use](https://developers.line.me/messaging-api/obtaining-user-consent). For more information, see [webhook event object](https://devdocs.line.me/en/#webhook-event-object).
 
 ### How can I find out the number of users in a group or a room?
 
@@ -203,7 +199,11 @@ Unfortunately, it's not possible to get the image of stickers sent by users. You
 
 ### Why can't I save or forward videos that are sent from my bot?
 
-This feature is not supported on the Messaging API. Users can only play videos that are sent from a bot, they cannot download or forward the videos to other users.
+You cannot save or forward videos sent from a bot if you are using LINE on iOS or on a version of LINE Android below 7.6.0. Users using LINE Android version 7.6.0 and download, forward, and save videos on Keep.
+
+### How can I prevent my images and videos from being downloaded by users?
+
+If you don't want your images and videos to be downloaded by users, we recommend sending rich content messages such as imagemap messages instead of images or videos.
 
 ### Why doesn't my audio, video, or image message display properly on Android devices?
 
