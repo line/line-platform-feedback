@@ -81,7 +81,7 @@ No. Events are not sent when a user joins or leaves a group or a room that your 
 
 ### How do I get a LINE Beacon?
 
-You can purchase a LINE Beacon from this [beacon shop website](https://beacon.theshop.jp/items/4699062).
+You can purchase a LINE Beacon from this [beacon shop website](https://beacon.theshop.jp/categories/361192).
 
 ### How can I use LINE Beacon with my bot?
 
