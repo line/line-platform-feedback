@@ -63,7 +63,7 @@ In the LINE@ Manager, go to Settings > Bot Settings > Details and make sure you 
 
 ### How can I get the user IDs of the users of a group or a room?
 
-User IDs are returned in webhook event objects when a user sends a message as long as the user is using LINE version 7.5.0 or higher and has agreed to the [Official Accounts Terms of Use](https://developers-origin.line-beta.me/messaging-api/obtaining-user-consent). For more information, see [webhook event object](https://devdocs.line.me/en/#webhook-event-object).
+User IDs are returned in webhook event objects when a user sends a message as long as the user is using LINE version 7.5.0 or higher and has agreed to the [Official Accounts Terms of Use](https://developers.line.me/messaging-api/obtaining-user-consent). For more information, see [webhook event object](https://devdocs.line.me/en/#webhook-event-object).
 
 ### How can I find out the number of users in a group or a room?
 
