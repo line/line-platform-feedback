@@ -241,7 +241,7 @@ Your accounts may belong to different *companies* (or *enterprises*) in the [LIN
 
 ### Do I need to have a server to create a LINE bot?
 
-Yes, you need to have a server with a SSL certificate to communicate with the LINE Platform. You can get free SSL certifcates using a service such as Let's Encrypt or StartSSL. It's also possible to try out the LINE Bot SDK using Heroku or another similar cloud service.
+Yes, you need to have a server with a SSL certificate to communicate with the LINE Platform. You can get free SSL certificates using a service such as Let's Encrypt or StartSSL. It's also possible to try out the LINE Bot SDK using Heroku or another similar cloud service.
 
 ### Do I need to use SSL on my server?
 
