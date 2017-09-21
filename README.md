@@ -149,17 +149,17 @@ You can display a rich menu by going to the "Rich menu" page under the "Create r
 
 ### Can I change my account to the "Developer Trial" plan?
 
-You cannot change an account to the "Developer Trial" plan. To use the "Developer Trial" plan you must create a new account. If you want to use `push` messages in production, you can use the LINE@ Pro plan. For more information on the types of plans available, see [Messaging API](https://business.line.me/en/services/bot). Please note that the plans available may vary depending on your country.
+You cannot change an account to the "Developer Trial" plan. To use the "Developer Trial" plan you must create a new account. If you want to use `push` messages in production, you can use the LINE@ Pro plan. For more information on the types of plans available, see [Messaging API](https://developers.line.me/en/services/messaging-api/). Please note that the plans available may vary depending on your country.
 
 ### What's the difference between the "Free" and "Basic" plans (only applies to accounts in Japan)?
 
-There is no difference as it relates to the Messaging API. (https://business.line.me/ja/services/bot) To learn about the differences in LINE@ features, see [LINE@ plans](http://at.line.me/jp/plan).
+There is no difference as it relates to the Messaging API. (https://developers.line.me/ja/services/messaging-api/) To learn about the differences in LINE@ features, see [LINE@ plans](http://at.line.me/jp/plan).
 
 ## Sending messages
 
 ### Why can't I use the `push` endpoint to send messages to users?
 
-Your plan may not include the PUSH_MESSAGE permission. You can check your permissions in the "Bot Settings" section of the LINE@ Manager as shown in the image below. To get the PUSH_MESSAGE permission you can use the "Developer Trial" plan or you can select a paid plan that supports push messages. For more information about the type of plans available, see [Messaging API](https://business.line.me/services/bot).
+Your plan may not include the PUSH_MESSAGE permission. You can check your permissions in the "Bot Settings" section of the LINE@ Manager as shown in the image below. To get the PUSH_MESSAGE permission you can use the "Developer Trial" plan or you can select a paid plan that supports push messages. For more information about the type of plans available, see [Messaging API](https://developers.line.me/en/services/messaging-api/).
 
 Note that you cannot change your existing account to the "Developer Trial" plan. You must create a new account.
 
@@ -235,9 +235,9 @@ Note: Make sure you use the user ID and not the LINE ID when you want to send a 
 
 ### Why do I get different user IDs (`userId`) with my different accounts (Channels)?
 
-Your accounts may belong to different *companies* (or *enterprises*) in the [LINE Business Center](https://business.line.me). User IDs are unique for each company that you create. This means that you cannot use the same user IDs for two accounts that belong to different companies. However, you can use user IDs across multiple accounts as long as they belong to the same company.
+Your accounts may belong to different *providers* (or *enterprises*) in the [LINE developers](https://developers.line.me/console/). User IDs are unique for each provider that you create. This means that you cannot use the same user IDs for two accounts that belong to different providers. However, you can use user IDs across multiple accounts as long as they belong to the same provider.
 
-![Business Center company](images/biz-center-company.png)
+![LINE developers provider](images/dev-center-provider.png)
 
 ### Do I need to have a server to create a LINE bot?
 
