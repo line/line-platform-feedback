@@ -27,7 +27,7 @@ Check our community [Q&A](https://www.line-community.me/questions) where LINE AP
 
 ## Frequently asked questions (FAQ)
 
-Our [FAQ page](https://developers.line.me/en/faq/) will be depricated im the near future. Please check our community [Q&A](https://www.line-community.me/questions) for anwsers, or ask querstions there if you cant find your anwser.
+Our [FAQ page](https://developers.line.me/en/faq/) will be depricated in the near future. Please check our community [Q&A](https://www.line-community.me/questions) for anwsers, or ask querstions there if you cant find your anwser.
 
 - [FAQ page](https://www.line-community.me/questions) : deprecated in the future
 - [Q&A](https://www.line-community.me/questions)
