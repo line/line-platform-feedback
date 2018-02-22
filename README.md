@@ -19,11 +19,18 @@ If you have any issues or suggestions related to our [developer documentation](h
 
 - Create a [new issue](https://github.com/line/line-bot-faq/issues) with the "documentation" label
 
+## Need help ?
+
+Check our community [Q&A](https://www.line-community.me/questions) where LINE API experts and other developers will help answser your question. You can also contribute by helping others !!
+
+- [Q&A](https://www.line-community.me/questions)
+
 ## Frequently asked questions (FAQ)
 
-You may want to check our [FAQ page](https://developers.line.me/en/faq/) to see the answers to frequently asked questions about our developer products. You can use the search feature or filter by labels to filter the FAQ items.
+Our [FAQ page](https://developers.line.me/en/faq/) will be depricated im the near future. Please check our community [Q&A](https://www.line-community.me/questions) for anwsers, or ask querstions there if you cant find your anwser.
 
-- [FAQ page](https://developers.line.me/en/faq/)
+- [FAQ page](https://www.line-community.me/questions) : deprecated in the future
+- [Q&A](https://www.line-community.me/questions)
 
 ## About the labels
 
