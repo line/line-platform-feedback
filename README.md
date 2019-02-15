@@ -1,3 +1,16 @@
+## We will archive this repository on February 15, 2019
+
+To be able to follow up on reported issues more effectively, we're reducing the number of reporting channels. This means the following:
+
+* On **February 15, 2019**, we'll be archiving this repository, including all issues.
+* We'll close all open issues, regardless of whether they've been solved.
+
+We'll keep the repository public so you can still read it. However, you won't be able to report new issues or edit existing ones here on GitHub. Instead, you can report LINE Platform issues on our [LINE Developers forum](https://www.line-community.me/questions). Please feel free to report your existing issue again if it hasn't been solved. We'll do our best to respond promptly.
+
+We apologize if you previously reported an issue that wasn't solved. We promise you that your feedback is important to us. That's why we want to make sure we can follow up on it more effectively in the future. Reducing the number of feedback channels is part of that. We hope you understand and look forward to seeing you on [the forum](https://www.line-community.me/).
+
+
+
 # LINE Platform feedback
 
 This public repository is for sharing feedback and feature requests for LINE Platform products found on the [LINE Developers site](https://developers.line.me/en/) such as the [Messaging API](https://developers.line.me/en/services/messaging-api/) and [LINE Login](https://developers.line.me/en/docs/line-login/overview/). 
